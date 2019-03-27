@@ -11,6 +11,8 @@ html, body, #container {
   }
   
   select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
     align-self: center;
     max-width: fit-content;
     border-radius: 0;
