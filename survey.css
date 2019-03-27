@@ -1,0 +1,79 @@
+html, body, #container {
+    width: 100%;
+    height: 100%;
+    background-color: #BFD8BD;
+    font-family: Georgia, Verdana, Helvetica;
+  }
+  
+  input, select {
+    border: 1px solid grey;
+    padding: 8px;
+  }
+  
+  select {
+    align-self: center;
+    max-width: fit-content;
+    border-radius: 0;
+  }
+  
+  form {
+    width: 66%;
+    margin: 2rem auto;
+    padding: 2rem 2rem;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem 3rem;      
+  }
+  
+  p, label {
+    text-align: right;
+    align-self: center;
+  }
+  
+  #title {
+    text-align: center;
+  }
+  
+  #satisfaction, #recommendation, #improvements {
+    display: grid;
+    justify-self: start;
+  }
+  
+  #satisfaction label, #recommendation label, #improvements label {
+    text-align: left;
+  }
+  
+  #submit {
+    grid-area: 11 / 1 / 12 / 3;
+    margin-top: 16px;
+    width: 5rem;
+    justify-self: center;
+  }
+  
+  #description {
+    grid-area: 1 / 1 / 2 / 3;
+    text-align: left;
+  }
+  
+  @media (max-width:550px) {
+    form {
+      grid-template-columns: auto;
+      grid-row-gap: 1rem;
+    }
+    label, p {
+      text-align: left;
+      margin: 10px 0 0 0;
+    }
+    #satisfaction label, #recommendation label,     #improvements label {
+      margin: 6px 0 0 0;
+    }
+    #submit {
+      grid-area: 20 / 1 / 21 / 2;
+    }
+    #description {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+  }
+  
+  
